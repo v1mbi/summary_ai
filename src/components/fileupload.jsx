@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { extractTextFromPDF } from "../functions/pdfConvertor";
-import { extractTextFromExcel } from "../functions/excelConvertor";
+
 import { FileType } from "../functions/fileType";
+import readExcelFile from "../functions/excelConvertor";
 
 function Fileupload() {
   const [file, setFile] = useState("Failed");
   const [rawDoc,setRawDoc] = useState(null)
   //extractTextFromPDF(rawDoc,setFile)
-    extractTextFromExcel(rawDoc)
+  //readExcelFile(rawDoc,setFile)
+    console.log(file)
   
   return (
     <>
       <input
         type="file"
-        accept="application/pdf"
         onChange={(e) => setRawDoc(e.target.files[0])
         }
       />
