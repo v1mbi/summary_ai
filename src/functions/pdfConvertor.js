@@ -4,7 +4,7 @@ import pdfWorker from "pdfjs-dist/build/pdf.worker.mjs?url";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
-export async function extractTextFromPDF(file,setWords) {
+export async function readPDFFile(file,setWords) {
     const reader = new FileReader();
     reader.readAsArrayBuffer(file);
 
