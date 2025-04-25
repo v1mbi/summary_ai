@@ -41,7 +41,7 @@ function Display() {
           <div className="sticky top-5 flex flex-row m-10 bg-slate-100 p-3 rounded">
             <Fileupload setText={setDoc} />{" "}
             <button
-              class="btn btn-soft btn-primary ml-2 text-white"
+              class="btn btn-soft btn-primary ml-2 text-white bg-sky-950"
               onClick={handleSummary}
             >
               Summarize
