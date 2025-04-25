@@ -44,7 +44,7 @@ function Display() {
               class="btn btn-soft btn-primary ml-2 text-white bg-sky-950"
               onClick={handleSummary}
             >
-              Summarize
+              Summarise
             </button>
           </div>
 
