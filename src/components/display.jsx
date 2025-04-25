@@ -23,7 +23,7 @@ function Display() {
   }
   
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
+    <div className="min-h-screen bg-blue-100 flex flex-col items-center">
       {/* Header */}
 
       {/* Main Content */}
@@ -41,10 +41,10 @@ function Display() {
           <div className="sticky top-5 flex flex-row m-10 bg-slate-100 p-3 rounded">
             <Fileupload setText={setDoc} />{" "}
             <button
-              class="btn btn-soft btn-primary ml-2 text-white bg-sky-950"
+              class="btn btn-soft  ml-2 text-white bg-blue-500 border-none hover:bg-blue-700 "
               onClick={handleSummary}
             >
-              Summarise
+              Summarize
             </button>
           </div>
 
